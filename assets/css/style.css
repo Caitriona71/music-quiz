@@ -22,22 +22,34 @@ body {
     border-radius: 10px;
     height: 200px;
     width: 99%;
-    background: url("../images/music-background3.jpg") no-repeat fixed center;
-    position: sticky;
+    background: url("../images/music-background3.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .music-theory-images {
     height: 80pt;
     width: 80pt;
-    margin-left: 30pt;
+    background: center center;
+    margin-left: 15pt;
 }
 
 .button {
     background-color: white;
     color: black;
     font-size: 16px;
-    padding: 5px;
-
+    padding: 10px;
 }
 
+  .center {
+    background-color:  rgb(2, 1, 19);
+    border: 6px solid goldenrod;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+  }
+ for larger to medium screens size from 1200px and down
+  @media screen and (max-width: 1200px) {
+    #quiz {
+        width: 60%;
+        height: 1200px;
+        margin: 0 auto; 
