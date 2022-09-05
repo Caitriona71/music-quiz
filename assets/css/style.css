@@ -9,11 +9,12 @@ h1 {
 }
 
 body {
-    color: black;
+    background-color: black;
+    color: white;
     font-family: 'Lato', san serif;
     font-size: 15px;
     font-weight: bolder;
-    margin-left: 30pt;
+    margin-left: 10pt;
 }
 
 #music-background3 {
@@ -26,5 +27,16 @@ body {
 }
 
 .music-theory-images {
+    height: 80pt;
+    width: 80pt;
     margin-left: 30pt;
 }
+
+.button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+
+}
+
