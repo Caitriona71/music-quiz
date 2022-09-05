@@ -11,7 +11,7 @@ function check() {
     var q9=document.musicquiz.question9.value;
     var q10=document.musicquiz.question10.value;
 
-    if (q1=="Treble Clef") {c++}
+if (q1=="Treble Clef") {c++}
 if (q2=="Crotchet Rest") {c++}
 if (q3=="D Major") {c++}
 if (q4=="Timpani") {c++}

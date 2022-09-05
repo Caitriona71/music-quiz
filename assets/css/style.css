@@ -2,6 +2,7 @@ h1 {
     font-family: 'Great Vibes', cursive;
     color: rgb(204, 154, 26);
     font-size: 55px;
+    line-height: 200%;
     margin-bottom: 120px;
     text-align: center;
     font-weight: 800;
@@ -9,16 +10,10 @@ h1 {
 
 body {
     color: black;
-    font-size: 20px;
+    font-family: 'Lato', san serif;
+    font-size: 15px;
     font-weight: bolder;
     margin-left: 30pt;
-}
-
-#button {
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    padding: 5px;
 }
 
 #music-background3 {
@@ -28,4 +23,8 @@ body {
     width: 99%;
     background: url("../images/music-background3.jpg") no-repeat fixed center;
     background-size: cover;
+}
+
+.music-theory-images {
+    margin-left: 30pt;
 }
