@@ -12,6 +12,7 @@ function check() {
     var q8=document.musicquiz.question8.value;
     var q9=document.musicquiz.question9.value;
     var q10=document.musicquiz.question10.value;
+   
     
 if (q1=="Treble Clef") {Score++}
 if (q2=="Crotchet Rest") {Score++}
@@ -24,5 +25,17 @@ if (q8=="Middle C") {Score++}
 if (q9=="Woodwind") {Score++}
 if (q10=="Demisemiquaver Rest") {Score++}
 
-document.write(Score);
+
+window.alert(`You got ${Score} correct.`)
+if (Score >7)
+window.alert("Awesome!")
+else
+window.alert("Awh! Try again")
+
+window.location.reload()
 }
+
+function restart() {
+    window.location.reload()
+}
+

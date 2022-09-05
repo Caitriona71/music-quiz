@@ -9,7 +9,7 @@ h1 {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(2, 1, 19);
     color: white;
     font-family: 'Lato', san serif;
     font-size: 15px;
@@ -23,6 +23,7 @@ body {
     height: 200px;
     width: 99%;
     background: url("../images/music-background3.jpg") no-repeat fixed center;
+    position: sticky;
     background-size: cover;
 }
 
