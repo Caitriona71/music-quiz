@@ -27,15 +27,19 @@ if (q10=="Demisemiquaver Rest") {Score++}
 
 
 window.alert(`You got ${Score} correct.`)
-if (Score >7)
-window.alert("Awesome!")
+if (Score >6)
+window.alert("Awesome score!")
+else if (Score > 4)
+window.alert("Not bad. Try again to improve your score.")
 else
-window.alert("Awh! Try again")
+window.alert("Awh! Hard luck. Please try again.")
 
-window.location.reload()
+/*window.location.reload()*/
+
 }
 
-function restart() {
+/*function restart() {
     window.location.reload()
-}
+}*/
+
 

@@ -1,11 +1,11 @@
 h1 {
-    font-family: 'Great Vibes', cursive;
     color: rgb(204, 154, 26);
-    font-size: 55px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 800;
     line-height: 200%;
     margin-bottom: 120px;
     text-align: center;
-    font-weight: 800;
 }
 
 body {
@@ -18,19 +18,22 @@ body {
 }
 
 #music-background3 {
-    border: 6px solid goldenrod;
-    border-radius: 10px;
-    height: 200px;
-    width: 99%;
     background: url("../images/music-background3.jpg") no-repeat center center;
     background-size: cover;
+    border: 6px solid goldenrod;
+    border-radius: 10px;
+    height: 150px;
+    margin: 0 auto;
+    width: 99%;
+    
+    
 }
 
 .music-theory-images {
-    height: 80pt;
-    width: 80pt;
     background: center center;
+    height: 80pt;
     margin-left: 15pt;
+    width: 80pt;
 }
 
 .button {
@@ -43,13 +46,38 @@ body {
   .center {
     background-color:  rgb(2, 1, 19);
     border: 6px solid goldenrod;
+    border-radius: 10px;
+    height: 3500px;
     margin: 0 auto;
-    width: 50%;
     padding: 10px;
+    text-align: center;
+    width: 50%;
   }
- for larger to medium screens size from 1200px and down
+  
+#quiz {
+    height: 3550px;
+}
+
+/*  
+ for larger to medium screens size from 1200px wide and down */
+/*
   @media screen and (max-width: 1200px) {
     #quiz {
         width: 60%;
         height: 1200px;
         margin: 0 auto; 
+    }
+}*/
+
+/* for medium screen sizes from 950px wide and down */
+
+/*@media screen and (max-width: 950px) {
+
+}*/
+
+ @media (max-width: 414px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
