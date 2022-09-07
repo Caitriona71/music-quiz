@@ -11,7 +11,7 @@ h1 {
 body {
     background-color: rgb(2, 1, 19);
     color: white;
-    font-family: 'Lato', san serif;
+    font-family: 'Lato', 'san serif';
     font-size: 15px;
     font-weight: bolder;
     margin-left: 10pt;
@@ -47,33 +47,16 @@ body {
     background-color:  rgb(2, 1, 19);
     border: 6px solid goldenrod;
     border-radius: 10px;
-    height: 3500px;
+    /* height: 3500px; */
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-    width: 50%;
+    width: 92%;
   }
   
-#quiz {
+/* #quiz {
     height: 3550px;
-}
-
-/*  
- for larger to medium screens size from 1200px wide and down */
-/*
-  @media screen and (max-width: 1200px) {
-    #quiz {
-        width: 60%;
-        height: 1200px;
-        margin: 0 auto; 
-    }
-}*/
-
-/* for medium screen sizes from 950px wide and down */
-
-/*@media screen and (max-width: 950px) {
-
-}*/
+} */
 
  @media (max-width: 414px) {
     h1 {

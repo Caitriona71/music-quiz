@@ -2,7 +2,7 @@
 Music Quiz is a simple multiple choice answers music theory quiz with images.  It's aim is to test the user's knowledge of music theory.  
 <br>
 
-![Am I Responsive](/assets/screenshots/am-i-responsive)
+![Am I Responsive](/assets/screenshots/responsive.png)
 
 This is the live site: [music-quiz](https://caitriona71-musicquiz-tf5qeirj9b3.ws-eu63.gitpod.io/caitriona71/music-quiz/)>
 
@@ -29,8 +29,8 @@ A relevant header image, underneath this is a list of 10 questions with images d
 Images from Clipart Library [http://clipart-library.com/]
 
 ## **Validator Testing**
-### ***Lighthouse*** - The quiz was tested for performance using Lighthouse.
-
+## **Lighthouse** - The quiz was tested for performance using Lighthouse.
+![Lighthouse Performance](assets/screenshots/light-house.png)
 
 
 ## **Acknowledgements**
