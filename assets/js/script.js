@@ -23,7 +23,7 @@ function check() {
     if (q9 === "Woodwind") {Score++;}
     if (q10 === "Demisemiquaver Rest") {Score++;}
 
-    /*window.alert(`You got ${Score} correct.`);*/
+    window.alert(`You got ${Score} correct.`);
     if (Score >6)
     window.alert("Awesome score!");
     else if (Score > 4)

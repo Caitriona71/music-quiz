@@ -9,10 +9,11 @@ This is the live site: [music-quiz](https://caitriona71-musicquiz-tf5qeirj9b3.ws
 ## **Features**
 A relevant header image, underneath this is a list of 10 questions with images displayed pertaining to each question together with four multiple choice answer options from which the user selects one answer.  A submit button for the user to submit his answers when quiz completed and alert messages telling the user their score and how well they did depending on how many questions they answered correctly.
 <br>
+<br>
 
 ## **Technologies Used**
 
-* HTML
+* HTML5
 * CSS
 * Javascript
 * Gitpod
@@ -21,17 +22,57 @@ A relevant header image, underneath this is a list of 10 questions with images d
 * [TinyPNG](https://tinypng.com)
 * [AmIResponsive](https://ui.dev/amiresponsive)
 * [webformatter.com](https://webformatter.com)
-
+<br>
+<br>
 ## **Future Improvements**
 
 * Various levels of difficulty could be included.
+<br>
+<br>
 ## **Content**
 Images from Clipart Library [http://clipart-library.com/]
+<br>
+<br>
 
 ## **Validator Testing**
-## **Lighthouse** - The quiz was tested for performance using Lighthouse.
-![Lighthouse Performance](assets/screenshots/light-house.png)
+### ***Lighthouse*** - The quiz was tested for performance using Lighthouse.
+<br>
 
+![Lighthouse Performance](/assets/screenshots/light-house.png)
+<br>
+<br>
+### ***W3C Html Validator*** HTML code was tested and returned no errors.
+
+![W3C HTML Validator Test](/assets/screenshots/html-validator.png)
+<br>
+<br>
+### ***W3C CSS Validator*** CSS code was tested and returned no errors.
+
+![W3C CSS Validator Test](/assets/screenshots/css-validator.png)
+<br>
+<br>
+### ***JS Hint Validator*** Javascript code was tested and returned no errors.
+
+![JSHintValidatorTest](/assets/screenshots/js-hint-validator.png)
+<br>
+<br>
+## **Image Compression**
+### ***Tinypng*** - Images were compressed with Tinypng.
+
+![TinyPng](/assets/screenshots/tinypng.png)
+<br>
+<br>
+## **Deployment**
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+* In the GitHub respository, click on the "settings" tab.
+* From the Source Section drop-down menu, select the Main branch.
+* Once the Main branch has been selected, the page will be refreshed with a detailed ribbon display indicating that the project was successfully deployed.
+<br>
+<br>
+## **Credits**
+***YouTube tutorials***
+***Clipart Library***
+***Tinypng***
 
 ## **Acknowledgements**
 * My Course Facilitator for his helpful advice, guidance and encouragement. <br>
