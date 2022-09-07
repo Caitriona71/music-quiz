@@ -41,17 +41,17 @@ Images from Clipart Library [http://clipart-library.com/]
 ![Lighthouse Performance](/assets/screenshots/light-house.png)
 <br>
 <br>
-### ***W3C Html Validator*** HTML code was tested and returned no errors.
+### ***W3C HTML Validator*** - HTML code was tested and returned no errors.
 
 ![W3C HTML Validator Test](/assets/screenshots/html-validator.png)
 <br>
 <br>
-### ***W3C CSS Validator*** CSS code was tested and returned no errors.
+### ***W3C CSS Validator*** - CSS code was tested and returned no errors.
 
 ![W3C CSS Validator Test](/assets/screenshots/css-validator.png)
 <br>
 <br>
-### ***JS Hint Validator*** Javascript code was tested and returned no errors.
+### ***JS Hint Validator*** - Javascript code was tested and returned no errors.
 
 ![JSHintValidatorTest](/assets/screenshots/js-hint-validator.png)
 <br>
@@ -69,10 +69,13 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * Once the Main branch has been selected, the page will be refreshed with a detailed ribbon display indicating that the project was successfully deployed.
 <br>
 <br>
+
 ## **Credits**
-***YouTube tutorials***
-***Clipart Library***
-***Tinypng***
+* YouTube tutorials<br>
+* Clipart Library<br>
+* Tinypng
+<br>
+<br>
 
 ## **Acknowledgements**
 * My Course Facilitator for his helpful advice, guidance and encouragement. <br>
