@@ -34,6 +34,23 @@ Images from Clipart Library [http://clipart-library.com/]
 <br>
 <br>
 
+## **Testing**
+The site contains 10 multiple choice answer questions.  The user has the option of selecting one answer from a selection of four.  The score is calculated after submit button has been clicked. The user has the option of restarting the quiz after answering some questions. The site has been tested on different devices and it works well. 
+<br>
+
+![Device Testing](/assets/screenshots/site-testing1.png)
+<br>
+<br>
+![Device Testing](/assets/screenshots/site-testing2.png)
+<br>
+<br>
+![Device Testing](/assets/screenshots/site-testing3.png)
+<br>
+<br>
+![Device Testing](/assets/screenshots/site-testing4.png)
+<br>
+<br>
+
 ## **Validator Testing**
 ### ***Lighthouse*** - The quiz was tested for performance using Lighthouse.
 <br>
