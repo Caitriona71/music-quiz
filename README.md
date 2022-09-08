@@ -4,7 +4,7 @@ Music Quiz is a simple multiple choice answers music theory quiz with images.  I
 
 ![Am I Responsive](/assets/screenshots/responsive.png)
 
-This is the live site: [music-quiz](https://caitriona71-musicquiz-tf5qeirj9b3.ws-eu63.gitpod.io/caitriona71/music-quiz/)>
+This is the live site: [music-quiz](https://caitriona71-musicquiz-tf5qeirj9b3.ws-eu63.gitpod.io)>
 
 ## **Features**
 A relevant header image, underneath this is a list of 10 questions with images displayed pertaining to each question together with four multiple choice answer options from which the user selects one answer.  A submit button for the user to submit his answers when quiz completed and alert messages telling the user their score and how well they did depending on how many questions they answered correctly.
