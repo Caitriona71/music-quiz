@@ -1,5 +1,5 @@
 h1 {
-    color: white;
+    color: rgb(204, 154, 26);
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
     font-weight: 800;
@@ -47,14 +47,12 @@ body {
     background-color:  rgb(2, 1, 19);
     border: 6px solid goldenrod;
     border-radius: 10px;
-    /* height: 3500px; */
     margin: 0 auto;
     padding: 10px;
     text-align: center;
     width: 92%;
   }
   
-
  @media (max-width: 414px) {
     h1 {
         font-size: 2rem;
