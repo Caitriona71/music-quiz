@@ -1,3 +1,4 @@
+/* Styling for main heading */
 h1 {
     color: rgb(204, 154, 26);
     font-family: 'Great Vibes', cursive;
@@ -8,6 +9,7 @@ h1 {
     text-align: center;
 }
 
+/* Styling applied to body of web page */
 body {
     background-color: rgb(2, 1, 19);
     color: white;
@@ -17,6 +19,7 @@ body {
     margin-left: 10pt;
 }
 
+/* Styling for header image */
 #music-background3 {
     background: url("../images/music-background3.jpg") no-repeat center center;
     background-size: cover;
@@ -25,17 +28,16 @@ body {
     height: 150px;
     margin: 0 auto;
     width: 99%;
-    
-    
 }
 
+/* Uniform styling applied to quiz images */
 .music-theory-images {
     background: center center;
     height: 80pt;
     margin-left: 15pt;
     width: 80pt;
 }
-
+/* Styling applied to submit and restart buttons */
 .button {
     background-color: white;
     color: black;
@@ -43,6 +45,7 @@ body {
     padding: 10px;
 }
 
+/* Styling applied to quiz div, with class center */
   .center {
     background-color:  rgb(2, 1, 19);
     border: 6px solid goldenrod;
