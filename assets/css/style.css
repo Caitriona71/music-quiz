@@ -1,12 +1,22 @@
 /* Styling for main heading */
 h1 {
-    color: rgb(204, 154, 26);
+    color: white;
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
     font-weight: 800;
     line-height: 200%;
     margin-bottom: 120px;
     text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', 'san serif';
+    font-size: 15px; 
+    margin-left: 20px;
+}
+
+h5 {
+    margin-left: 20px;
 }
 
 /* Styling applied to body of web page */
@@ -17,6 +27,10 @@ body {
     font-size: 15px;
     font-weight: bolder;
     margin-left: 10pt;
+}
+
+p {
+    font-size: 20px;
 }
 
 /* Styling for header image */
@@ -37,7 +51,143 @@ body {
     margin-left: 15pt;
     width: 80pt;
 }
+
 /* Styling applied to submit and restart buttons */
+.button1 {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.button {
+    background-color: goldenrod;
+    /*border: none;*/
+    color: black;
+    /*display: block;*/
+    font-size: 15px;
+    font-weight: bolder;
+    /*padding: 1rem;*/
+    padding: 10px;
+    width: 20%;
+}
+
+/* Styling applied to quiz div, with class center */
+.center {
+    background-color: rgb(2, 1, 19);
+    border: 6px solid goldenrod;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 95%;
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Styling for main heading 
+h1 {
+    color: rgb(224, 177, 57);
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 200%;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+/* Styling applied to body of web page 
+body {
+    align-items: center;
+    /*background: purple;
+    background-image: url("../images/header-image1.jpg");
+    color: white;
+    display: flex;
+    font-family: 'Lato', 'san serif';
+    font-size: 15px;
+    font-weight: bolder;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 10pt;
+}
+
+.music-quiz-container {
+    background: purple;
+    background-image: url("../images/header-image1.jpg");
+    box-shadow: 0 0 10px 2px rgba(100 100 100 0);
+    background-size: contain;
+    width: 600px;
+}
+
+.music-quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    font-family: 'Great Vibes', 'cursive';
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(45, 189, 230);
+    border: none;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    padding: 1.1rem;
+    width: 100%;
+}
+
+
+
+
+
+Styling for header image
+#music-background3 {
+    background: url("../images/music-background3.jpg") no-repeat center center;
+    background-size: cover;
+    border: 6px solid goldenrod;
+    border-radius: 10px;
+    height: 150px;
+    margin: 0 auto;
+    width: 99%;
+} 
+
+ Uniform styling applied to quiz images 
+.music-theory-images {
+    background: center center;
+    border: 0px;
+    height: 80pt;
+    margin-left: 15pt;
+    width: 80pt;
+}
+
+Styling applied to submit and restart buttons 
 .button {
     background-color: white;
     color: black;
@@ -45,7 +195,7 @@ body {
     padding: 10px;
 }
 
-/* Styling applied to quiz div, with class center */
+Styling applied to quiz div, with class center 
   .center {
     background-color:  rgb(2, 1, 19);
     border: 6px solid goldenrod;
@@ -56,9 +206,9 @@ body {
     width: 92%;
   }
   
+  Media queries 
  @media (max-width: 414px) {
     h1 {
         font-size: 2rem;
     }
-}
-
+}*/
