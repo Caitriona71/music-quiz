@@ -1,4 +1,4 @@
-const ansBtn=document.getElementsByClassName("ans_btn")
+/*const ansBtn=document.getElementsByClassName("ans_btn")*/
 
 function check() {
     let Score=0;
@@ -12,6 +12,10 @@ function check() {
     let q8=document.musicquiz.question8.value;
     let q9=document.musicquiz.question9.value;
     let q10=document.musicquiz.question10.value;
+
+    function myFunction() {
+        document.getElementById("right_answer").innerHTML = "Treble Clef";
+      }
 
 
 if (q1=="Treble Clef") {
@@ -34,7 +38,7 @@ if (q10=="Demisemiquaver Rest") {Score++}
 document.write(Score);
 }
 
-window.alert(`You got ${Score} correct.`)
+window.alert(`You got ${Score} correct.`) {
 if (Score >7)
 window.alert("Awesome!")
 else

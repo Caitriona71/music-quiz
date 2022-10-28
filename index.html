@@ -7,26 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Music Theory Quiz">
     <meta name="keywords" content="music quiz, music theory quiz">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
     <title>Music Quiz</title>
 </head>
 
 <body>
+
+    <section id="rules">
+        <div id="rules-container">
+            <h2>How to Play</h2>
+            <span>1. Try the quiz to test your knowledge of music theory.</span>
+            <span>2. There are 10 multiple choice questions to answer.</span>
+            <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple choice options.</span>
+            <span>4. Submit your answers at the end of the quiz to get your score.</span>
+            <span>5. Select restart to start the quiz again.</span>    
+        </div>
+    </section>
+
+<div class="grid">
+<div id="music theory quiz">
+<h1> MUSIC THEORY QUIZ </h1>
+<hr style="margin-bottom: 20px">
+<p id="question"> </p>
+
+<div class="button">
+<button id="bt0"> <span id="choice0"> </span> </button>
+<button id="bt1"> <span id="choice1"> </span> </button>
+<button id="bt2"> <span id="choice2"> </span> </button>
+<button id="bt3"> <span id="choice3"> </span> </button>
+
+</div>
+
+<hr style="margin-top: 50px">
+
+<footer>
+<p id="progress"> Question x of y</p>
+</footer>
+</div>
+</div>
+
+<script src="quiz.js"> </script>
+<script src="question.js"> </script>
+<script src="app.js"> </script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+<body>
+
+
+</body>
+
+
+
+
+
+
+
+<!--
+<body>
     <div id="music-background3">
         <h1>Music Theory Quiz</h1>
     </div>
-    <div>
-        <h2>Rules</h2>
-        <h4>1. Try the quiz to test your knowledge of music theory.</h4>
-        <h4>2. There are 10 multiple choice questions to answer.</h4>
-        <h4>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple choice options.</h4> 
-        <h4>4. Submit your answers at the end of the quiz to get your score.</h4>
-        <h4>5. Select restart to start the quiz again.</h4>     
+    <section id="rules">
+    <div id="rules-container">
+        <h2>How to Play</h2>
+        <span>1. Try the quiz to test your knowledge of music theory.</span>
+        <span>2. There are 10 multiple choice questions to answer.</span>
+        <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple choice options.</span>
+        <span>4. Submit your answers at the end of the quiz to get your score.</span>
+        <span>5. Select restart to start the quiz again.</span>    
     </div>
+</section>
     <br>
     <div id="quiz" class="center">
         <form name="musicquiz" id="musicquiz">
@@ -35,10 +102,10 @@
                 <p><br><img src="assets/images/clef1.jpg" alt="music theory symbol - clef" class="music-theory-images">
                 </p>
                 <p>1. What clef is this?</p>
-                <!--<label>A<input type="radio" name="question1" value="Treble Clef"></label>Treble Clef<br><br>
+                <label>A<input type="radio" name="question1" value="Treble Clef"></label>Treble Clef<br><br>
                 <label>B<input type="radio" name="question1" value="Tenor Clef"></label>Tenor Clef<br><br>
                 <label>C<input type="radio" name="question1" value="Bass Clef"></label>Bass Clef<br><br>
-                <label>D<input type="radio" name="question1" value="Alto Clef"></label>Alto Clef<br><br>-->
+                <label>D<input type="radio" name="question1" value="Alto Clef"></label>Alto Clef<br><br>
                 <input type="button" name="question1" class="button ans_btn" value="Treble Clef"><br><br>
                 <input type="button" name="question1" class="button ans_btn" value="Tenor Clef"><br><br>
                 <input type="button" name="question1" class="button ans_btn" value="Bass Clef"><br><br>
@@ -50,10 +117,10 @@
                 <p><br><img src="assets/images/rest1.png" alt="music theory symbol - note rest"
                         class="music-theory-images"></p>
                 <p>2. What type of rest is this?</p>
-                <!--<label>A<input type="radio" name="question2" value="Minim Rest"></label>Minim Rest<br><br>
+                <label>A<input type="radio" name="question2" value="Minim Rest"></label>Minim Rest<br><br>
                 <label>B<input type="radio" name="question2" value="Semiquaver Rest"></label>Semiquaver Rest<br><br>
                 <label>C<input type="radio" name="question2" value="Crotchet Rest"></label>Crotchet Rest<br><br>
-                <label>D<input type="radio" name="question2" value="Quaver Rest"></label>Quaver Rest<br><br>-->
+                <label>D<input type="radio" name="question2" value="Quaver Rest"></label>Quaver Rest<br><br>
                 <input type="button" name="question2" class="button" value="Minim Rest"><br><br>
                 <input type="button" name="question2" class="button" value="Semiquaver Rest"><br><br>
                 <input type="button" name="question2" class="button" value="Crotchet Rest"><br><br>
@@ -65,10 +132,10 @@
                 <p><br><img src="assets/images/music-symbol5.jpg" alt="music theory - key signature"
                         class="music-theory-images"></p>
                 <p>3. What is the key signature?</p>
-                <!--<label>A<input type="radio" name="question3" value="E Minor"></label>E Minor<br><br>
+                <label>A<input type="radio" name="question3" value="E Minor"></label>E Minor<br><br>
                 <label>B<input type="radio" name="question3" value="D Major"></label>D Major<br><br>
                 <label>C<input type="radio" name="question3" value="E Major"></label>E Major<br><br>
-                <label>D<input type="radio" name="question3" value="G Major"></label>G Major<br><br>-->
+                <label>D<input type="radio" name="question3" value="G Major"></label>G Major<br><br>
                 <input type="button" name="question3" class="button" value="E Minor"><br><br>
                 <input type="button" name="question3" class="button" value="D Major"><br><br>
                 <input type="button" name="question3" class="button" value="E Major"><br><br>
@@ -80,10 +147,10 @@
                 <p><br><img src="assets/images/orchestra5.png" alt="percussion instrument" class="music-theory-images">
                 </p>
                 <p>4. What is the name of this percussion instrument?</p>
-                <!--<label>A<input type="radio" name="question4" value="Cymbals"></label>Cymbals<br><br>
+                <label>A<input type="radio" name="question4" value="Cymbals"></label>Cymbals<br><br>
                 <label>B<input type="radio" name="question4" value="Xylophone"></label>Xylophone<br><br>
                 <label>C<input type="radio" name="question4" value="Side Drum"></label>Side Drum<br><br>
-                <label>D<input type="radio" name="question4" value="Timpani"></label>Timpani<br><br>-->
+                <label>D<input type="radio" name="question4" value="Timpani"></label>Timpani<br><br>
                 <input type="button" name="question4" class="button" value="Cymbals"><br><br>
                 <input type="button" name="question4" class="button" value="Xylophone"><br><br>
                 <input type="button" name="question4" class="button" value="Side Drum"><br><br>
@@ -95,10 +162,10 @@
                 <p><br><img src="assets/images/rest2.png" alt="music theory symbol - note rest"
                         class="music-theory-images"></p>
                 <p>5. This rest is a:</p>
-                <!--<label>A<input type="radio" name="question5" value="Quaver Rest"></label>Quaver Rest<br><br>
+                <label>A<input type="radio" name="question5" value="Quaver Rest"></label>Quaver Rest<br><br>
                 <label>B<input type="radio" name="question5" value="Semibreve Rest"></label>Semibreve Rest<br><br>
                 <label>C<input type="radio" name="question5" value="Semiquaver Rest"></label>Semiquaver Rest<br><br>
-                <label>D<input type="radio" name="question5" value="Minim Rest"></label>D. Minim Rest<br><br>-->
+                <label>D<input type="radio" name="question5" value="Minim Rest"></label>D. Minim Rest<br><br>
                 <input type="button" name="question5" class="button" value="Quaver Rest"><br><br>
                 <input type="button" name="question5" class="button" value="Semibreve Rest"><br><br>
                 <input type="button" name="question5" class="button" value="Semiquaver Rest"><br><br>
@@ -110,14 +177,14 @@
                 <p><br><img src="assets/images/music-symbol7.png" alt="music theory - time signature"
                         class="music-theory-images"></p>
                 <p>6. The time signature indicates:</p>
-                <!--<label>A<input type="radio" name="question6" value="2 minim beats in a bar"></label>2 minim beats in a
+                <label>A<input type="radio" name="question6" value="2 minim beats in a bar"></label>2 minim beats in a
                 bar<br><br>
                 <label>B<input type="radio" name="question6" value="4 quaver beats in a bar"></label>4 quaver beats in a
                 bar<br><br>
                 <label>C<input type="radio" name="question6" value="4 minim beats in a bar"></label>4 minim beats in a
                 bar<br><br>
                 <label>D<input type="radio" name="question6" value="4 crotchet beats in a bar"></label>4 crotchet beats
-                in a bar<br><br>-->
+                in a bar<br><br>
                 <input type="button" name="question6" class="button" value="2 minim beats in a bar"><br><br>
                 <input type="button" name="question6" class="button" value="4 quaver beats in a bar"><br><br>
                 <input type="button" name="question6" class="button" value="4 minim beats in a bar"><br><br>
@@ -129,10 +196,10 @@
                 <p><br><img src="assets/images/key-signature2.png" alt="music theory - key signature"
                         class="music-theory-images"></p>
                 <p>7. What is the key signature?</p>
-                <!--<label>A<input type="radio" name="question7" value="G Major"></label>G Major<br><br>
+                <label>A<input type="radio" name="question7" value="G Major"></label>G Major<br><br>
                 <label>B<input type="radio" name="question7" value="G Minor"></label>G Minor<br><br>
                 <label>C<input type="radio" name="question7" value="F# Minor"></label>F# Minor<br><br>
-                <label>D<input type="radio" name="question7" value="C Major"></label>C Major<br><br>-->
+                <label>D<input type="radio" name="question7" value="C Major"></label>C Major<br><br>
                 <input type="button" name="question7" class="button" value="G Major"><br><br>
                 <input type="button" name="question7" class="button" value="G Minor"><br><br>
                 <input type="button" name="question7" class="button" value="F# Minor"><br><br>
@@ -144,10 +211,10 @@
                 <p><br><img src="assets/images/music-note.png" alt="music theory - notes on stave"
                         class="music-theory-images"></p>
                 <p>8. Which note is this?</p>
-                <!--<label>A<input type="radio" name="question8" value="F"></label>F<br><br>
+                <label>A<input type="radio" name="question8" value="F"></label>F<br><br>
                 <label>B<input type="radio" name="question8" value="Middle C"></label>Middle C<br><br>
                 <label>C<input type="radio" name="question8" value="A"></label>A<br><br>
-                <label>D<input type="radio" name="question8" value="E"></label>E-->
+                <label>D<input type="radio" name="question8" value="E"></label>E
                 <input type="button" name="question8" class="button" value="F"><br><br>
                 <input type="button" name="question8" class="button" value="Middle C"><br><br>
                 <input type="button" name="question8" class="button" value="A"><br><br>
@@ -159,10 +226,10 @@
                 <p><br><img src="assets/images/orchestra6.png" alt="orchestral instrument piccolo"
                         class="music-theory-images"></p>
                 <p>9. In which orchestral family does this instrument belong?</p>
-                <!--<label>A<input type="radio" name="question9" value="Percussion"></label>Percussion<br><br>
+                <label>A<input type="radio" name="question9" value="Percussion"></label>Percussion<br><br>
                 <label>B<input type="radio" name="question9" value="Brass"></label>Brass<br><br>
                 <label>C<input type="radio" name="question9" value="Strings"></label>Strings<br><br>
-                <label>D<input type="radio" name="question9" value="Woodwind"></label>Woodwind-->
+                <label>D<input type="radio" name="question9" value="Woodwind"></label>Woodwind
                 <input type="button" name="question9" class="button" value="Percussion"><br><br>
                 <input type="button" name="question9" class="button" value="Brass"><br><br>
                 <input type="button" name="question9" class="button" value="Strings"><br><br>
@@ -175,11 +242,11 @@
                         class="music-theory-images"></p>
                 <p>10. This rest is a:</p>
 
-                <!--<label>A<input type="radio" name="question10" value="Semibreve Rest"></label>Semibreve Rest<br><br>
+                <label>A<input type="radio" name="question10" value="Semibreve Rest"></label>Semibreve Rest<br><br>
                 <label>B<input type="radio" name="question10" value="Demisemiquaver Rest"></label>Demisemiquaver
                 Rest<br><br>
                 <label>C<input type="radio" name="question10" value="Crotchet Rest"></label>Crotchet Rest<br><br>
-                <label>D<input type="radio" name="question10" value="Semiquaver Rest"></label>Semiquaver Rest<br><br>-->
+                <label>D<input type="radio" name="question10" value="Semiquaver Rest"></label>Semiquaver Rest<br><br>
                 <input type="button" name="question10" class="button" value="Semibreve Rest"><br><br>
                 <input type="button" name="question10" class="button" value="Demisemiquaver Rest"><br><br>
                 <input type="button" name="question10" class="button" value="Crotchet Rest"><br><br>
@@ -195,6 +262,8 @@
 </body>
 
 </html>
+-->
+
 
 
 
