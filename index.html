@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+    <!--<script src="assets/js/script.js"></script>-->
     <title>Music Quiz</title>
 </head>
 
@@ -21,8 +21,8 @@
         <div id="rules-container">
             <h2>How to Play</h2>
             <span>1. Try the quiz to test your knowledge of music theory.</span>
-            <span>2. There are 10 multiple choice questions to answer.</span>
-            <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple choice options.</span>
+            <span>2. There are 10 multiple option questions to answer.</span>
+            <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple option options.</span>
             <span>4. Submit your answers at the end of the quiz to get your score.</span>
             <span>5. Select restart to start the quiz again.</span>    
         </div>
@@ -35,10 +35,10 @@
 <p id="question"> </p>
 
 <div class="button">
-<button id="bt0"> <span id="choice0"> </span> </button>
-<button id="bt1"> <span id="choice1"> </span> </button>
-<button id="bt2"> <span id="choice2"> </span> </button>
-<button id="bt3"> <span id="choice3"> </span> </button>
+<button id="btn0"> <span id="option0"> </span> </button>
+<button id="btn1"> <span id="option1"> </span> </button>
+<button id="btn2"> <span id="option2"> </span> </button>
+<button id="btn3"> <span id="option3"> </span> </button>
 
 </div>
 
@@ -49,16 +49,12 @@
 </footer>
 </div>
 </div>
-
-
-
-
-
+<script src="assets/js/script.js"></script>
+<script src="assets/js/music-theory-quiz.js"></script>
+<script src="assets/js/quiz-questions.js"></script>
 
 
 </body>
-
-
 
 </html>
 
@@ -84,8 +80,8 @@
     <div id="rules-container">
         <h2>How to Play</h2>
         <span>1. Try the quiz to test your knowledge of music theory.</span>
-        <span>2. There are 10 multiple choice questions to answer.</span>
-        <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple choice options.</span>
+        <span>2. There are 10 multiple option questions to answer.</span>
+        <span>3. Scroll down the page to answer each question by choosing one answer from the 4 multiple option options.</span>
         <span>4. Submit your answers at the end of the quiz to get your score.</span>
         <span>5. Select restart to start the quiz again.</span>    
     </div>
@@ -331,7 +327,7 @@
     <form name="musicquiz" id="musicquiz">
         
 <div>
-    quiz images, questions and multiple choice answer options
+    quiz images, questions and multiple option answer options
     <img src="assets/images/clef1.jpg" alt="music theory symbol - clef" class="music-theory-images">
     <p>1. What clef is this?</p> 
     <input type="radio" name="question1" value="Treble Clef">Treble Clef<br><br>
