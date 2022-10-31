@@ -1,5 +1,19 @@
-function generate()
-
+/*function generate() {
+    if(musicTheoryQuiz.isEnded()) {
+        displayScores();
+    }
+    else {
+        // show question
+        let element = document.getElementById("question");
+        element.innerHTML = musicTheoryQuiz.getQuestionIndex().options;
+        for(let i = 0; i < options.length; i++) {
+            let element = document.getElementById("option" + i);
+            element.innerHTML = options[i];
+            guess("btn" + i, options[i]);
+        }
+        displayProgress();
+    }
+};*/
 
 
 
