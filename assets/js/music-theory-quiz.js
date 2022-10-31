@@ -3,3 +3,7 @@ function musicTheoryQuiz(questions) {
     this.questions = questions;
     this.questionIndex = 0;
 }
+
+musicTheoryQuiz.prototype.getQuestionIndex = function() {
+    return this.questions[this.questionIndex];
+}

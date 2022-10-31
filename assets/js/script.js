@@ -18,7 +18,7 @@ function generate() {
 
 
 
-function guess()
+function guess(id, guess)
 
 
 
