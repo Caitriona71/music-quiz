@@ -18,13 +18,20 @@ function generate() {
 
 
 
-function guess(id, guess)
+function guess(id, guess) {
+    let button = document.getElementById(id);
+    button.onclick = function() {
+        musicTheoryQuiz.guess(guess);
+        generate();
+    }
+};
 
 
-
-
-
-function displayProgress()
+function displayProgress() {
+    let currentQuestionNumber = musicTheoryQuiz.questionIndex + 1;
+    let element = document.getElementById("progress");
+    element.innerHTML = "Question " + currentQuestionNumber + " of " + musicTheoryQuiz.questions.length;
+};
 
 
 
