@@ -1,4 +1,4 @@
-/*function generate() {
+function generate() {
     if(musicTheoryQuiz.isEnded()) {
         displayScores();
     }
@@ -13,7 +13,7 @@
         }
         displayProgress();
     }
-};*/
+};
 
 
 
