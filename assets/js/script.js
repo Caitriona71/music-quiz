@@ -16,8 +16,6 @@ function generate() {
 };
 
 
-
-
 function guess(id, guess) {
     let button = document.getElementById(id);
     button.onclick = function() {
@@ -34,9 +32,6 @@ function displayProgress() {
 };
 
 
-
-
-
 function displayScores() {
     let gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + musicTheoryQuiz.score + "</h2>";
@@ -44,9 +39,29 @@ function displayScores() {
     element.innerHTML = gameOverHTML;
 };
 
+// Add questions
+    let questions = [
+        new Question("What clef is this?", ["Treble Clef", "Tenor Clef", "Bass Clef", "Alto Clef"], "Treble Clef"),
 
+        new Question("What type of rest is this?", ["Minim Rest", "Semiquaver Rest", "Crotchet Rest", "Quaver Rest"], "Crotchet Rest"),
+        
+        new Question("What is the key signature?", ["E Minor", "D Major", "E Major", "G Major"], "D Major"),
+        
+        new Question("What is the name of this percussion instrument?", ["Cymbals", "Xylophone", "Side Drum", "Timpani"], "Timpani"),
 
+        new Question("This rest is a:", ["Quaver Rest", "Semibreve Rest", "Semiquaver Rest", "Minim Rest"], "Quaver Rest"),
+        
+        new Question("The time signature indicates:", ["2 minim beats in a bar", "4 quaver beats in a bar", "4 minim beats in a bar",  "4 crotchet beats in a bar"], "4 crotchet beats in a bar"),
+        
+        new Question("What is the key signature?", ["G Major", "G Minor", "F# Minor", "C Major"], "G Major"),
 
+        new Question("Which note is this?", ["F", "Middle C", "A", "E"], "Middle C"),
+
+        new Question("In which orchestral family does this instrument belong?", ["Percussion", "Brass", "Strings", "Woodwind"], "Woodwind"),
+        
+        new Question("This rest is a:", ["Semibreve Rest", "Demisemiquaver Rest", "Crotchet Rest", "Semiquaver Rest"], "Demisemiquaver Rest"),
+        
+    
 /*const ansBtn=document.getElementsByClassName("ans_btn")*/
 
 /*function check() {
