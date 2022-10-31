@@ -37,9 +37,12 @@ function displayProgress() {
 
 
 
-function displayScores()
-
-
+function displayScores() {
+    let gameOverHTML = "<h1>Result</h1>";
+    gameOverHTML += "<h2 id='score'> Your scores: " + musicTheoryQuiz.score + "</h2>";
+    let element = document.getElementById("musicTheoryQuiz");
+    element.innerHTML = gameOverHTML;
+};
 
 
 
