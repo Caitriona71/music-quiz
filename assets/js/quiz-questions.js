@@ -3,3 +3,7 @@ function Question(text, options, answer) {
     this.options = options;
     this.answer = answer;
 }
+
+Question.prototype.isCorrectAnswer = function(option) {
+    return this.answer === option;
+}

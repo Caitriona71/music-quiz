@@ -60,6 +60,12 @@ function displayScores() {
         new Question("In which orchestral family does this instrument belong?", ["Percussion", "Brass", "Strings", "Woodwind"], "Woodwind"),
         
         new Question("This rest is a:", ["Semibreve Rest", "Demisemiquaver Rest", "Crotchet Rest", "Semiquaver Rest"], "Demisemiquaver Rest"),
+
+    ];
+
+    let musicTheoryQuiz = new musicTheoryQuiz(questions)
+
+    generate();
         
     
 /*const ansBtn=document.getElementsByClassName("ans_btn")*/
