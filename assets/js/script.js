@@ -1,6 +1,31 @@
+function generate()
+
+
+
+
+
+function guess()
+
+
+
+
+
+function displayProgress()
+
+
+
+
+
+function displayScores()
+
+
+
+
+
+
 /*const ansBtn=document.getElementsByClassName("ans_btn")*/
 
-function check() {
+/*function check() {
     let Score=0;
     let q1=document.musicquiz.question1.value;
     let q2=document.musicquiz.question2.value;
