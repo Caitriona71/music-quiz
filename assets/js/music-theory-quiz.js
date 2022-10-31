@@ -7,3 +7,11 @@ function musicTheoryQuiz(questions) {
 musicTheoryQuiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
+
+musicTheoryQuiz.prototype.guess = function(answer) {
+    if (this.getQuestionIndex().isCorrectAnswer(answer)) {
+        this.score++;
+    }
+
+    this.questionIndex++;
+}
