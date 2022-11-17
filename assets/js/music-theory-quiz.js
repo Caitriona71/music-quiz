@@ -10,8 +10,12 @@ musicTheoryQuiz.prototype.getQuestionIndex = function() {
 
 musicTheoryQuiz.prototype.guess = function(answer) {
     if (this.getQuestionIndex().isCorrectAnswer(answer)) {
-        this.score++;
+          this.score++;
     }
 
     this.questionIndex++;
+}
+
+musicTheoryQuiz.prototype.isEnded = function() {
+    return this.questionIndex === this.questions.length;
 }

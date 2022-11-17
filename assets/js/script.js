@@ -1,47 +1,47 @@
-function generate() {
+function populate() {
     if(musicTheoryQuiz.isEnded()) {
         displayScores();
     }
     else {
         // show question
-        let element = document.getElementById("question");
+        var element = document.getElementById("question");
         element.innerHTML = musicTheoryQuiz.getQuestionIndex().options;
-        for(let i = 0; i < options.length; i++) {
-            let element = document.getElementById("option" + i);
+        for(var i = 0; i < options.length; i++) {
+            var element = document.getElementById("option" + i);
             element.innerHTML = options[i];
             guess("btn" + i, options[i]);
         }
         displayProgress();
     }
-};
+}
 
 
 function guess(id, guess) {
-    let button = document.getElementById(id);
+    var button = document.getElementById("id");
     button.onclick = function() {
         musicTheoryQuiz.guess(guess);
-        generate();
-    }
-};
+        populate();
+    };
+}
 
 
 function displayProgress() {
-    let currentQuestionNumber = musicTheoryQuiz.questionIndex + 1;
-    let element = document.getElementById("progress");
+    var currentQuestionNumber = musicTheoryQuiz.questionIndex + 1;
+    var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + musicTheoryQuiz.questions.length;
-};
+}
 
 
 function displayScores() {
-    let gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + musicTheoryQuiz.score + "</h2>";
-    let element = document.getElementById("musicTheoryQuiz");
+    var element = document.getElementById("musicTheoryQuiz");
     element.innerHTML = gameOverHTML;
-};
+}
 
-// Add questions
-    let questions = [
-        new Question("What clef is this?", ["Treble Clef", "Tenor Clef", "Bass Clef", "Alto Clef"], "Treble Clef"),
+// Add Question
+    var questions = [
+        new Question("What clef is this? <br> <img src=assets/images/>clef1.jpg> </br>", ["Treble Clef", "Tenor Clef", "Bass Clef", "Alto Clef"], "Treble Clef"),
 
         new Question("What type of rest is this?", ["Minim Rest", "Semiquaver Rest", "Crotchet Rest", "Quaver Rest"], "Crotchet Rest"),
         
@@ -63,25 +63,25 @@ function displayScores() {
 
     ];
 
-    let musicTheoryQuiz = new musicTheoryQuiz(questions)
+    var Quiz = new Quiz(questions);
 
-    generate();
+    populate();
         
     
 /*const ansBtn=document.getElementsByClassName("ans_btn")*/
 
 /*function check() {
-    let Score=0;
-    let q1=document.musicquiz.question1.value;
-    let q2=document.musicquiz.question2.value;
-    let q3=document.musicquiz.question3.value;
-    let q4=document.musicquiz.question4.value;
-    let q5=document.musicquiz.question5.value;
-    let q6=document.musicquiz.question6.value;
-    let q7=document.musicquiz.question7.value;
-    let q8=document.musicquiz.question8.value;
-    let q9=document.musicquiz.question9.value;
-    let q10=document.musicquiz.question10.value;
+    var Score=0;
+    var q1=document.musicquiz.question1.value;
+    var q2=document.musicquiz.question2.value;
+    var q3=document.musicquiz.question3.value;
+    var q4=document.musicquiz.question4.value;
+    var q5=document.musicquiz.question5.value;
+    var q6=document.musicquiz.question6.value;
+    var q7=document.musicquiz.question7.value;
+    var q8=document.musicquiz.question8.value;
+    var q9=document.musicquiz.question9.value;
+    var q10=document.musicquiz.question10.value;
 
     function myFunction() {
         document.getElementById("right_answer").innerHTML = "Treble Clef";
@@ -90,7 +90,7 @@ function displayScores() {
 
 if (q1=="Treble Clef") {
     Score++
-    let correct=this
+    var correct=this
     correct.style.backgroundColor = "#00ff00";
 
 }
@@ -127,11 +127,11 @@ function restart() {
 
 /*const data = [
     {
-        question: "What cletf is this?",
-        a: "Treblet Cletf",
-        b: "Tenor Cletf",
-        c: "Bass Cletf",
-        d: "Alto Cletf",
+        question: "What clef is this?",
+        a: "Treble Clef",
+        b: "Tenor Clef",
+        c: "Bass Clef",
+        d: "Alto Clef",
         correct: "a",
     },
     {
@@ -185,7 +185,7 @@ function restart() {
     {
         question: "Which note is this?",
         a: "F",
-        b: "Middlet C",
+        b: "Middvar C",
         c: "A",
         d: "E",
         correct: "b",
@@ -209,23 +209,23 @@ function restart() {
     
 ]
 
-const musicQuiz = document.getEletmentbyId("music-quiz");
-const answerEls = document.querySeletctorAll(".answer");
-const questionEl = document.getEletmentbyId("question");
-const optionA = document.getEletmentbyId("optionA");
-const optionB = document.getEletmentbyId("optionB");
-const optionC = document.getEletmentbyId("optionC");
-const optionD = document.getEletmentbyId("optionD");
+const musicQuiz = document.getElementbyId("music-quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementbyId("question");
+const optionA = document.getElementbyId("optionA");
+const optionB = document.getElementbyId("optionB");
+const optionC = document.getElementbyId("optionC");
+const optionD = document.getElementbyId("optionD");
 
-const submitBtn = document.getEletmentbyId("submit");
+const submitBtn = document.getElementbyId("submit");
 
-let currentMusicQuiz = 0
-let score = 0
+var currentMusicQuiz = 0
+var score = 0
 
 loadMusicQuiz()
 
 function loadMusicQuiz(){
-    deseletctAnswers()
+    deselectAnswers()
 
     const currentMusicQuizData = data[currentMusicQuiz]
 
@@ -236,14 +236,14 @@ function loadMusicQuiz(){
     optionD.innerText = currentMusicQuizData.d
 }
 
-function deseletctAnswers(){
+function deselectAnswers(){
     answerEls.forEach((answerEl) =>(
         answerEl.checked = false
     ))
 }
 
-function getSeletct(){
-    let answer
+function getSect(){
+    var answer
 
     answerEls.forEach((answerEl) =>{
         if(answerEl.checked){
@@ -254,7 +254,7 @@ function getSeletct(){
 }
 
 submitBtn.addEventListener("click", () =>{
-    const answer = getSeletcted()
+    const answer = getSected()
 
 
     if(answer){
@@ -263,56 +263,56 @@ submitBtn.addEventListener("click", () =>{
     }
     currentMusicQuiz++
 
-    if(currentMusicQuiz < data.letngth){
+    if(currentMusicQuiz < data.length){
         loadMusicQuiz()
     }
     else{
         music-quiz.innerHTML = `
-        <h2>You answered ${score}/${data.letngth} questions correctly</h2>
+        <h2>You answered ${score}/${data.length} Question correctly</h2>
 
         <button onclick="location.reload()">Try again</button></h2>
         `;
     }
 })*/
 
-/*import Swal from 'sweetaletrt2/dist/sweetaletrt2.js'
+/*import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 Swal.fire('') */
 
 /*function check() {
     
-    let Score = 0;
-    let q1 = document.musicquiz.question1.value;
-    let q2 = document.musicquiz.question2.value;
-    let q3 = document.musicquiz.question3.value;
-    let q4 = document.musicquiz.question4.value;
-    let q5 = document.musicquiz.question5.value;
-    let q6 = document.musicquiz.question6.value;
-    let q7 = document.musicquiz.question7.value;
-    let q8 = document.musicquiz.question8.value;
-    let q9 = document.musicquiz.question9.value;
-    let q10 = document.musicquiz.question10.value;
+    var Score = 0;
+    var q1 = document.musicquiz.question1.value;
+    var q2 = document.musicquiz.question2.value;
+    var q3 = document.musicquiz.question3.value;
+    var q4 = document.musicquiz.question4.value;
+    var q5 = document.musicquiz.question5.value;
+    var q6 = document.musicquiz.question6.value;
+    var q7 = document.musicquiz.question7.value;
+    var q8 = document.musicquiz.question8.value;
+    var q9 = document.musicquiz.question9.value;
+    var q10 = document.musicquiz.question10.value;
 
-    if (q1 === "Treblet Cletf") {Score++;}
+    if (q1 === "Treble Clef") {Score++;}
     if (q2 === "Crotchet Rest") {Score++;}
     if (q3 === "D Major") {Score++;}
     if (q4 === "Timpani") {Score++;}
     if (q5 === "Quaver Rest") {Score++;}
     if (q6 === "4 crotchet beats in a bar") {Score++;}
     if (q7 === "G Major") {Score++;}
-    if (q8 === "Middlet C") {Score++;}
+    if (q8 === "Middle C") {Score++;}
     if (q9 === "Woodwind") {Score++;}
     if (q10 === "Demisemiquaver Rest") {Score++;}
 
     Pop up windows for scores and message to player
-   window.aletrt(`You got ${Score} correct.`);
+   window.alert(`You got ${Score} correct.`);
     if (Score > 6)
-    window.aletrt("Awesome score!");
+    window.alert("Awesome score!");
 
     else if (Score > 4)
-    window.aletrt("Not bad. Try again to improve your score.");
+    window.alert("Not bad. Try again to improve your score.");
     else
-    window.aletrt("Awh! Hard luck. Pletase try again.");
+    window.alert("Awh! Hard luck. Please try again.");
 
     window.location.reload();
 }
